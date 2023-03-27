@@ -21,8 +21,6 @@ def update_messages(role, content):
     messages.append({"role":role, "content":content})
 
 
-is_on = True
-while is_on:
+while True:
    bot()
-   print("")
    human()
