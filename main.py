@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "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"
+openai.api_key = "key here"
 
 messages = [{"role": "user", "content": "hi there!"},]
 
@@ -18,7 +18,7 @@ def human():
     update_messages("user",content)
 
 def update_messages(role, content):
-    messages.append({"role":"user", "content":content})
+    messages.append({"role":role, "content":content})
 
 
 is_on = True
