@@ -1,12 +1,12 @@
 import openai
-openai.api_key = "key here"
+openai.api_key = "key"
 
 messages = [{"role": "user", "content": "hi there!"},]
 
 def bot():
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo",messages=messages)
     content = response['choices'][0]['message']['content']
-    update_messages("assisstant",content)
+    update_messages("assistant",content)
 
     print("* BOT *")
     print(content)
