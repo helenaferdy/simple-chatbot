@@ -1,5 +1,5 @@
 import openai
-openai.api_key = "key"
+openai.api_key = "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"
 
 messages = [{"role": "user", "content": "hi there!"},]
 
@@ -8,12 +8,12 @@ def bot():
     content = response['choices'][0]['message']['content']
     update_messages("assistant",content)
 
-    print("* BOT *")
+    print("* Bot *")
     print(content)
     print("")
 
 def human():
-    content = input("* USER * \n")
+    content = input("* Human * \n")
     print("")
     update_messages("user",content)
 
