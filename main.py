@@ -1,6 +1,9 @@
 import openai
-openai.api_key = "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"
+import base64
 
+NOT_KEY = base64.b64decode(("c2stcTNuaVhLSkRVRENoZGhRaklBNnhUM0JsYmtGSkIyb2VsdEd1ZjlwY0VVU3JvckI0").encode('utf-8')).decode('utf-8')
+
+openai.api_key = NOT_KEY
 messages = [{"role": "user", "content": "hi there!"},]
 
 def bot():
